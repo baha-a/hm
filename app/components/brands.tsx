@@ -13,7 +13,7 @@ const brands = [
 export default function Brands() {
   return (
   <>
-    <div className="relative flex overflow-x-hidden py-20 my-12 dark:bg-gray-900/50 bg-gray-50">
+    <div className="relative flex overflow-x-hidden py-20 my-12 dark:bg-gray-900/50 bg-gray-50 shadow">
       <div className="px-10 flex gap-20 animate-marquee whitespace-nowrap">
         {brands.map(x => <img className="w-20" key={'a-' + x.image} src={x.image} alt={x.name} />)}
         {brands.map(x => <img className="w-20" key={'x-'+x.image} src={x.image} alt={x.name} />)}

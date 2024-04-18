@@ -5,9 +5,9 @@ export default function Location() {
               <h2 className="text-3xl font-extrabold">Besuchen Sie unseren Standort</h2>
           </div>
           <div className="mt-16 lg:mt-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                   <a href="https://www.google.com/maps/place/Dellbr%C3%BCcker+Hauptstra%C3%9Fe+49,+51069+K%C3%B6ln" target="_blank">
-                    <img src="/images/address.png" alt="address map" className="h-96 shadow-lg border border-black/20 cursor-pointer rounded-lg opacity-90 hover:opacity-100 object-cover" />
+                    <img src="/images/address.png" alt="address map" className="shadow-lg border border-black/20 cursor-pointer rounded-lg opacity-90 hover:opacity-100 object-cover" />
                   </a>
 
                   <div>

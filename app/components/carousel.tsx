@@ -30,7 +30,7 @@ const Carousel = ({ images }: {
 
   return (
     <div className="relative">
-      <div className="relative overflow-hidden carousel-image rounded-lg m-4 mt-0 opacity-60 shadow-lg">
+      <div className="relative overflow-hidden carousel-image rounded-lg m-4 mt-0 shadow-lg">
         {images.map((image, index) => (
           <div key={image} className={`ease-in-out duration-700`}  hidden={index !== currentIndex}>
             <img
