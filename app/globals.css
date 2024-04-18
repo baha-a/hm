@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+.carousel-image {
+  height: 40rem;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 20rem;
+  }
+}

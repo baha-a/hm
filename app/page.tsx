@@ -1,6 +1,54 @@
 import Image from "next/image";
+import Navbar from "./components/navbar";
+import Carousel from "./components/carousel";
 
 export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <Carousel images={[
+          '/images/1.jpeg',
+          '/images/2.jpeg',
+          '/images/3.jpeg',
+          '/images/4.jpeg',
+          '/images/5.jpeg',
+          '/images/6.jpeg',
+          '/images/7.jpeg',
+          '/images/8.jpeg',
+          '/images/9.jpeg',
+          '/images/10.jpeg',
+      ]} />
+
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+      <h1>wlwlode</h1>
+    </>
+  )
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
