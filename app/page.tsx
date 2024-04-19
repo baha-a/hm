@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/navbar";
 import Carousel from "./components/carousel";
 import Services from "./components/services";
@@ -8,6 +7,7 @@ import Team from "./components/team";
 import Prices from "./components/prices";
 import Location from "./components/location";
 import Divider from "./components/divider";
+import Why from "./components/why";
 
 export default function Home() {
   return (
@@ -23,9 +23,9 @@ export default function Home() {
           '/images/carousel/7.jpeg',
       ]} />
       <Divider />
-
-
       <Services />
+      <Divider />
+      <Why />
       <Prices />
       <Brands />
       <Team />

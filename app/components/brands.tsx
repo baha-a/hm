@@ -15,16 +15,16 @@ export default function Brands() {
   <>
     <div className="relative flex overflow-x-hidden py-20 my-12 dark:bg-gray-900/50 bg-gray-50 shadow">
       <div className="px-10 flex gap-20 animate-marquee whitespace-nowrap">
-        {brands.map(x => <img className="w-20" key={'a-' + x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'x-'+x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'x2-'+x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'x2-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'a-' + x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'x-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'x2-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'x2-'+x.image} src={x.image} alt={x.name} />)}
       </div>
       <div className="px-10 flex gap-20 animate-marquee2 whitespace-nowrap">
-        {brands.map(x => <img className="w-20" key={'y-'+x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'z-'+x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'z2-'+x.image} src={x.image} alt={x.name} />)}
-        {brands.map(x => <img className="w-20" key={'z2-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'y-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'z-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'z2-'+x.image} src={x.image} alt={x.name} />)}
+        {brands.map(x => <img className="w-32" key={'z2-'+x.image} src={x.image} alt={x.name} />)}
       </div>
     </div>
   </>

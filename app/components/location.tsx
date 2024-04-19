@@ -7,7 +7,7 @@ export default function Location() {
           <div className="mt-16 lg:mt-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                   <a href="https://www.google.com/maps/place/Dellbr%C3%BCcker+Hauptstra%C3%9Fe+49,+51069+K%C3%B6ln" target="_blank">
-                    <img src="/images/address.png" alt="address map" className="shadow-lg border border-black/20 cursor-pointer rounded-lg opacity-90 hover:opacity-100 object-cover" />
+                    <img src="/images/address.png" alt="address map" className="border border-black/20 cursor-pointer rounded-lg object-cover drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" />
                   </a>
 
                   <div>

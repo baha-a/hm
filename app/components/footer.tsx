@@ -14,21 +14,21 @@ export default function Footer() {
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">About</a>
+                <a href="#" className="hover:underline me-4 md:me-6">Über uns</a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                <a href="#" className="hover:underline me-4 md:me-6">Datenschutzerklärung</a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
+                <a href="#" className="hover:underline me-4 md:me-6">Impressum</a>
               </li>
               <li>
-                <a href="#" className="hover:underline">Contact</a>
+                <a href="#" className="hover:underline">Kontakt</a>
               </li>
             </ul>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-800 lg:mt-24 lg:mb-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">2024 <a href="" className="hover:underline">Dellbrück Haushaltsgeräte</a>. All Rights Reserved.</span>
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">2024 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">baha-a</a></span>
         </div>
       </footer>
 
