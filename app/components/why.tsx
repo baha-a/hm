@@ -1,11 +1,6 @@
 'use client';
 
-function checkDarkMode() {
-  return document.body.classList.contains("dark");
-}
-
 export default function Why() {
-  const iconColor = checkDarkMode() ? '#000' : '#fff';
   return (
     <>
       <div className="flex flex-wrap justify-center text-center mb-24">
