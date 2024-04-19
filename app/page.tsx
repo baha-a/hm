@@ -14,13 +14,13 @@ export default function Home() {
     <>
       <Navbar />
       <Carousel images={[
-          '/images/carousel/1.jpeg',
-          '/images/carousel/2.jpeg',
-          '/images/carousel/3.jpeg',
-          '/images/carousel/4.jpeg',
-          '/images/carousel/5.jpeg',
-          '/images/carousel/6.jpeg',
-          '/images/carousel/7.jpeg',
+        '/images/carousel/1.jpeg',
+        '/images/carousel/2.jpeg',
+        '/images/carousel/3.jpeg',
+        '/images/carousel/4.jpeg',
+        '/images/carousel/5.jpeg',
+        '/images/carousel/6.jpeg',
+        '/images/carousel/7.jpeg',
       ]} />
       <Divider />
       <Services />
