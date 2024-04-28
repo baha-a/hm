@@ -8,6 +8,8 @@ import Prices from "./components/prices";
 import Location from "./components/location";
 import Divider from "./components/divider";
 import Why from "./components/why";
+import Testimonials from "./components/testimonials";
+import EBay from "./components/ebay";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       <Divider />
       <Why />
       <Prices />
+      <EBay />
+      <Testimonials />
       <Brands />
       <Team />
       <Divider />

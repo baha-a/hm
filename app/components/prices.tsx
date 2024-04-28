@@ -1,32 +1,63 @@
 export default function Prices() {
   return (
-    <>
-      <div className="flex flex-wrap justify-center text-center mb-24">
-        <div className="w-full lg:w-6/12 px-4">
-          <h2 className="text-4xl font-bold text-center pt-12 pb-4 tracking-tight">Unsere Preise</h2>
+    <div className="flex flex-wrap justify-center text-center pb-24">
+      <div className="w-full lg:w-6/12 px-4">
+        <h2 className="text-4xl font-bold text-center pt-12 pb-4 tracking-tight">Unsere Preise</h2>
+      </div>
+      <div className="my-10 flex flex-col md:flex-row gap-10">
+        <div>
+          <h3 className="shadow-xl rounded-t-3xl p-4 font-bold text-lg text-white bg-gradient-to-r from-cyan-500 to-blue-500">
+            Lieferservice
+          </h3>
+          <div className="w-96 md:w-80 lg:w-96 shadow-2xl rounded-b-3xl p-4 dark:bg-gray-800">
+            <PriceItem title="Anlieferung in Köln" subtitle="bis zur 3. Etage (erstes Gerät)" cost={39} />
+            <PriceItem title="Jedes weitere Gerät" cost={19} prefix="+" />
+            <PriceItem title="Ab der 4. Etage" subtitle="ohne Aufzug" cost={10} prefix="zzgl." />
+            <PriceItem title="Herd Anlieferung inkl. Anschluss" subtitle="in Köln" cost={59} />
+            <PriceItem title="Anlieferung" subtitle="außerhalb von Köln" cost={49} prefix="ab" />
+            <PriceItem title="Altgeräteentsorgung" cost={10} />
+          </div>
         </div>
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 px-20 md:px-10 lg:px-40">
-          <h3>Lieferservice</h3>
-          <ul>
-            <li>Anlieferung in Köln€ 39,00</li>
-            <li>bis zur 3. Etage (erstes Gerät)</li>
-            <li>Jedes weitere Gerät+ € 19,00</li>
-            <li>Ab der 4. Etagezzgl. € 10,00ohne Aufzug</li>
-            <li>Herd Anlieferung inkl. Anschluss€ 59,00 in Köln</li>
-            <li>Anlieferungab € 49,00 außerhalb von Köln</li>
-            <li>Altgeräteentsorgung€ 10,00</li>
-          </ul>
-
-          <h3>Premium Lieferservice</h3>
-          <ul>
-            <li>Waschmaschine€ 69,00 inkl. Anschluss</li>
-            <li>Spülmaschineab € 79,00 inkl. Anschluss und Montage</li>
-            <li>Einbauherdset€ 99,00 inkl.    Anschluss und Montage</li>
-            <li>Einbaukühlschrank€ 99,00 inkl. Montage, Altgerätemitnahme kostenfrei</li>
-            <li>Jedes weitere Gerät+ € 49,00</li>
-          </ul>
+        <div>
+          <h3 className="shadow-xl rounded-t-3xl p-4 font-bold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            Premium Lieferservice
+          </h3>
+          <div className="w-96 md:w-80 lg:w-96 shadow-2xl rounded-b-3xl p-4 dark:bg-gray-800">
+            <PriceItem className="pt-1 pb-6" title="Waschmaschine" subtitle="inkl. Anschluss" cost={69} />
+            <PriceItem className="pt-1 pb-6" title="Spülmaschine" subtitle="inkl. Anschluss und Montage" cost={79} prefix="ab" />
+            <PriceItem className="pt-1 pb-6" title="Einbauherdset" subtitle="inkl. Anschluss und Montage" cost={99} />
+            <PriceItem className="pt-1 pb-6" title="Einbaukühlschrank" subtitle="inkl. Montage, Altgerätemitnahme kostenfrei" cost={99} />
+            <PriceItem className="pt-1 pb-6" title="Jedes weitere Gerät" cost={49} prefix="+" />
+          </div>
         </div>
       </div>
-    </>
+    </div>
+  )
+}
+
+function PriceItem({ cost, title, subtitle, prefix, className }: {
+  cost: number,
+  title: string,
+  subtitle?: string,
+  prefix?: string,
+  className?: string,
+}) {
+  return (
+    <div className={`my-4 flex flex-col pb-4 border-b border-dashed border-gray-300 dark:border-gray-700 last:border-none ${className}`}>
+      <div className="flex flex-row justify-between">
+        <span>
+          {title}
+        </span>
+        <div>
+          <span className="text-gray-700 dark:text-gray-500">{prefix} € </span>
+          <span className="font-bold text-xl">
+            {cost}
+          </span>
+        </div>
+      </div>
+      <span className="flex italic text-sm text-gray-700 dark:text-gray-500">
+        {subtitle}
+      </span>
+    </div>
   )
 }

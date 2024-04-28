@@ -7,7 +7,7 @@ export default function Services() {
           Ihr Schlüssel zu einer reibungslos funktionierenden Haushaltselektronik
         </p>
       </div>
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 px-20 md:px-10 lg:px-40">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 px-10 lg:px-40">
         <Service title="Lieferung" content="Geben Sie uns die Verantwortung für die Zustellung. Wir werden Ihnen die von uns erworbenen Geräte an dem von Ihnen gewünschten Tag nach Hause liefern">
           <svg className="py-4 w-40 text-gray-800 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
@@ -43,7 +43,7 @@ function Service({
   children: any,
 }) {
   return (
-    <div className="bg-white rounded-lg shadow dark:bg-gray-800 flex flex-col items-center">
+    <div className="bg-white rounded-lg shadow dark:bg-gray-900 flex flex-col items-center">
       {children}
       <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>

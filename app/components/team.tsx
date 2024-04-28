@@ -13,15 +13,15 @@ export default function Team() {
       </div>
       <div className="flex flex-wrap gap-20 justify-center">
         <Member
-          name='Employee 1'
-          role='Founder & Specialist'
+          name='Ibrahim'
+          role='Eigentümer'
           image='https://st4.depositphotos.com/9998432/22597/v/450/depositphotos_225976914-stock-illustration-person-gray-photo-placeholder-man.jpg'
           phone='+49 176 84656125'
         />
 
         <Member
-          name='Employee 2'
-          role='Technician'
+          name='Ayad'
+          role='Eigentümer'
           image='https://st4.depositphotos.com/9998432/22597/v/450/depositphotos_225976914-stock-illustration-person-gray-photo-placeholder-man.jpg'
           phone='+49 176 84656125'
         />

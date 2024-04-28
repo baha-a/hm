@@ -31,8 +31,6 @@ export default function Footer() {
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">2024 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">baha-a</a></span>
         </div>
       </footer>
-
-
     </>
   )
 }

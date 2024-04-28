@@ -3,14 +3,14 @@
 export default function Why() {
   return (
     <>
-      <div className="flex flex-wrap justify-center text-center mb-24">
+      <div className="flex flex-wrap justify-center text-center pt-24 pb-16 bg-gray-50 dark:bg-gray-900/60">
         <div className="w-full lg:w-6/12 px-4">
           <h2 className="text-4xl font-bold text-center pb-4 tracking-tight">Unsere Stärken</h2>
-          <p className="text-lg font-light">
+          <p className="text-lg font-light px-10">
             Wenn wir an unsere Stärken glauben, werden wir täglich stärker
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-10 px-20 md:px-10 lg:px-40">
+        <div className="mt-10 flex flex-wrap justify-center gap-12 px-20 md:px-10">
           <Reason title="Professionelle Beratung" content="Unser engagiertes Team steht Ihnen stets mit kompetentem Rat zur Seite. Wir helfen Ihnen bei der Auswahl des perfekten Produkts oder unterstützen Sie bei Reparaturen">
             <svg className="mt-4 w-14 h-14" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -40,8 +40,6 @@ export default function Why() {
               </g>
             </svg>
           </Reason>
-        </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-10 px-10 md:px-40 lg:px-60">
           <Reason title="Umfassende Auswahl" content="In unserem Geräte-Center erwartet Sie eine beeindruckende Auswahl von über 100 sorgfältig aufbereiteten Haushaltsgeräten. Unsere erfahrene Werkstatt gewährleistet, dass jedes Gerät sich in Top-Zustand befindet">
             <svg className="mt-4 w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.667 490.667">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -89,11 +87,11 @@ function Reason({
   children?: any,
 }) {
   return (
-    <div className="rounded-lg flex flex-col items-center">
+    <div className="w-72 rounded-lg flex flex-col items-center gap-4">
       {children}
-      <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{content}</p>
+      <div>
+        <h5 className="mb-2 text-nowrap text-xl font-bold text-gray-900 dark:text-white">{title}</h5>
+        <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">{content}</p>
       </div>
     </div>
   )
