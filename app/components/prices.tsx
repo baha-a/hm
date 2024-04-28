@@ -9,7 +9,7 @@ export default function Prices() {
           <h3 className="shadow-xl rounded-t-3xl p-4 font-bold text-lg text-white bg-gradient-to-r from-cyan-500 to-blue-500">
             Lieferservice
           </h3>
-          <div className="w-96 md:w-80 lg:w-96 shadow-2xl rounded-b-3xl p-4 dark:bg-gray-800">
+          <div className="w-96 md:w-80 lg:w-96 shadow-lg rounded-b-3xl p-4 dark:bg-gray-800">
             <PriceItem title="Anlieferung in Köln" subtitle="bis zur 3. Etage (erstes Gerät)" cost={39} />
             <PriceItem title="Jedes weitere Gerät" cost={19} prefix="+" />
             <PriceItem title="Ab der 4. Etage" subtitle="ohne Aufzug" cost={10} prefix="zzgl." />
@@ -22,7 +22,7 @@ export default function Prices() {
           <h3 className="shadow-xl rounded-t-3xl p-4 font-bold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
             Premium Lieferservice
           </h3>
-          <div className="w-96 md:w-80 lg:w-96 shadow-2xl rounded-b-3xl p-4 dark:bg-gray-800">
+          <div className="w-96 md:w-80 lg:w-96 shadow-lg rounded-b-3xl p-4 dark:bg-gray-800">
             <PriceItem className="pt-1 pb-6" title="Waschmaschine" subtitle="inkl. Anschluss" cost={69} />
             <PriceItem className="pt-1 pb-6" title="Spülmaschine" subtitle="inkl. Anschluss und Montage" cost={79} prefix="ab" />
             <PriceItem className="pt-1 pb-6" title="Einbauherdset" subtitle="inkl. Anschluss und Montage" cost={99} />
