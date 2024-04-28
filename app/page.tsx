@@ -27,9 +27,9 @@ export default function Home() {
       <Divider />
       <Services />
       <Divider />
-      <Why />
       <Prices />
-      <EBay />
+      <Why />
+      {/* <EBay /> */}
       <Testimonials />
       <Brands />
       <Team />

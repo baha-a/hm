@@ -12,7 +12,7 @@ export default function Footer() {
               </svg>
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dellbrück Haushaltsgeräte</span>
             </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul className="flex flex-wrap md:items-center flex-col md:flex-row gap-1 lg:gap-2 justify-start my-6 text-sm font-medium text-gray-500 dark:text-gray-400">
               <li>
                 <a href="#" className="hover:underline me-4 md:me-6">Über uns</a>
               </li>
@@ -28,7 +28,11 @@ export default function Footer() {
             </ul>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-800 lg:mt-24 lg:mb-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">2024 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">baha-a</a></span>
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">
+            2024 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">
+              baha-a
+            </a>
+            </span>
         </div>
       </footer>
     </>
