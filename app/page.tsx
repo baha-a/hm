@@ -30,6 +30,7 @@ export default function Home() {
       <Prices />
       <Why />
       {/* <EBay /> */}
+      <Divider />
       <Testimonials />
       <Brands />
       <Team />
