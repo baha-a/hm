@@ -33,7 +33,7 @@ export default function Home() {
       <Testimonials />
       <Brands />
       <Team />
-      <Divider />
+      <Divider line />
       <Location />
       <Divider />
       <Footer />
