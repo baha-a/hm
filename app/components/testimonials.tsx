@@ -1,19 +1,19 @@
 export default function Testimonials() {
   return <>
 
-    <div className="flex flex-wrap justify-center text-center pb-8">
+    <div>
 
-      <div className="w-full px-4">
+      <div className="text-center pb-8 w-full px-4">
         <h2 className="text-4xl font-bold text-center pt-12 pb-4 tracking-tight">Referenzen</h2>
       </div>
 
-      <div className="w-full flex flex-col gap-4 justify-center items-center mt-8">
-
+      <div className="md:px-60 md:snap-x gap-10 items-center mt-8 flex overflow-hidden md:overflow-x-auto max-md:flex-col max-md:h-96 max-md:overflow-y-hidden">
         <Quate
           content='"Ich brauchte dringend eine neue und günstige Waschmaschine, welche ich auch direkt gefunden habe. Die Lieferung erfolgte sogar noch am gleichen Tag! Die Jungs sind super lieb und sehr kompetent. Ich habe eine einwandfreie generalüberholte Waschmaschine zum kleinen Preis erworben. Gerne wieder!"'
           author="Jessica M"
           link="https://g.co/kgs/YNKVx4c"
           profileColor="#ab47bc"
+          date="2-2024"
         />
 
         <Quate
@@ -21,6 +21,7 @@ export default function Testimonials() {
           author="Sina L"
           link="https://g.co/kgs/wN5bhMH"
           profileColor="#8d6e63"
+          date="10-2023"
         />
 
         <Quate
@@ -28,6 +29,7 @@ export default function Testimonials() {
           author="Adnan Mulic"
           link="https://g.co/kgs/5qCjMwM"
           profileColor="#7e57c2"
+          date="10-2023"
         />
 
         <Quate
@@ -35,6 +37,7 @@ export default function Testimonials() {
           author="Ned Rashk"
           link="https://g.co/kgs/7Vs4bfY"
           profileColor="#ec407a"
+          date="10-2023"
         />
 
         <Quate
@@ -42,6 +45,7 @@ export default function Testimonials() {
           author="Renate Dorfeld"
           link="https://g.co/kgs/w2KffME"
           profileColor="#5c6bc0"
+          date="10-2023"
         />
 
         <Quate
@@ -49,6 +53,7 @@ export default function Testimonials() {
           author="Anna Foehlisch"
           link="https://g.co/kgs/vHwRmoC"
           profileColor="#455a64"
+          date="10-2023"
         />
 
         <Quate
@@ -56,6 +61,7 @@ export default function Testimonials() {
           author="Farhad Bilal"
           link="https://g.co/kgs/ksMiYBL"
           profileColor="#78909c"
+          date="1-2024"
         />
 
         <Quate
@@ -63,14 +69,14 @@ export default function Testimonials() {
           author="Ilijana Getos"
           link="https://g.co/kgs/qnHyYuq"
           profileColor="#0088d1"
+          date="4-2024"
         />
-
-        <div className="flex gap-4">
-          <svg className="w-6 h-6 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-
-          <svg className="w-6 h-6 cursor-pointer " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </div>
       </div>
+      <div className="flex gap-4 my-10 justify-center">
+          <svg className="w-6 h-6 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path></svg>
+
+          <svg className="w-6 h-6 cursor-pointer " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+        </div>
     </div>
   </>
 }
@@ -80,14 +86,16 @@ function Quate({
   author,
   link,
   profileColor = 'bg-black',
+  date,
 }: {
   content: string,
   author: string,
   link?: string,
   profileColor?: string,
+  date: string,
 }) {
   return (
-    <section className="bg-gray-50 dark:bg-gray-800 w-full md:w-fit md:rounded-lg">
+    <section className="md:snap-center md:flex-shrink-0 bg-gray-50 dark:bg-gray-800 w-full md:w-fit md:rounded-lg">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-12 lg:px-16">
         <figure className="max-w-screen-md mx-auto">
           <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-500" viewBox="0 0 24 27" fill="none"
@@ -99,9 +107,9 @@ function Quate({
           <blockquote>
             <p className="text-xl font-medium text-gray-900 md:text-xl dark:text-white italic">{content}</p>
           </blockquote>
-          <figcaption className="flex justify-between items-baseline">
+          <figcaption className="flex justify-between items-baseline flex-col sm:flex-row">
             <FiveStars />
-            <div className="flex justify-between items-center mt-6 space-x-3">
+            <div className="flex justify-center sm:justify-between items-center mt-0 sm:mt-6 space-x-3  w-full sm:w-auto">
               <div className="w-8 h-8 rounded-full text-white text-center font-bold pt-1" style={{ backgroundColor: profileColor }}>
                 {author.at(0)?.toUpperCase()}
               </div>
@@ -123,7 +131,7 @@ function Quate({
 
 function FiveStars() {
   return (
-    <div className="flex items-center justify-center my-5">
+    <div className="flex items-center justify-center my-5 w-full sm:w-auto">
       <svg className="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
       </svg>

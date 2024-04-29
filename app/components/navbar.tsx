@@ -4,15 +4,10 @@ export default function Navbar () {
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-        {/*
-          <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -11 13.88 13">
-            <path d="M 0 0 L 2 0 L 2 2 L 0 2 L 0 0 M 0 -2 L 0 -4 L 6 -4 L 6 2 L 4 2 L 4 -2 L 0 -2 M 0 -6 L 2 -6 L 2 -9 L 7 -9 L 7 -11 L 2 -11 L 0 -11 L 0 -6 M 7 -11 C 16 -11 16 2 8 2 L 8 0 C 13 0 13 -9 7 -9 Z" fill="#FFCC00"/>
-          </svg>
-        */}
         <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -11 14.75 13">
           <path d="M 0 -1 L 3 -1 L 3 2 L 0 2 L 0 -1 M 0 -2 L 0 -5 L 7 -5 L 7 2 L 4 2 L 4 -2 L 0 -2 M 0 -6 L 3 -6 L 3 -8 L 8 -8 L 8 -11 L 2 -11 L 0 -11 L 0 -6 M 8 -11 C 17 -11 17 2 8 2 L 8 -1 C 13 -1 13 -8 8 -8 Z" fill="#FFCC00"/>
         </svg>
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dellbrück Haushaltsgeräte</span>
+          <span className="self-center text-lg sm:text-2xl font-semibold whitespace-nowrap dark:text-white">Dellbrück Haushaltsgeräte</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
