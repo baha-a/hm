@@ -10,7 +10,7 @@ export default function Why() {
             Wenn wir an unsere Stärken glauben, werden wir täglich stärker
           </p>
         </div>
-        <div className="mt-10 flex flex-wrap justify-center gap-12 px-20 md:px-10">
+        <div className="mt-10 flex flex-wrap justify-center gap-12 md:px-10">
           <Reason title="Professionelle Beratung" content="Unser engagiertes Team steht Ihnen stets mit kompetentem Rat zur Seite. Wir helfen Ihnen bei der Auswahl des perfekten Produkts oder unterstützen Sie bei Reparaturen">
             <svg className="mt-4 w-14 h-14" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
