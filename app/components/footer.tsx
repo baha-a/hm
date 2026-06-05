@@ -1,8 +1,6 @@
 export default function Footer() {
   return (
     <>
-
-
       <footer className="bg-white shadow dark:bg-gray-900">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
@@ -27,9 +25,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-800 lg:mt-24 lg:mb-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">
-            2024 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-800 lg:mt-12 lg:mb-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center text-italic">
+            2026 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">
               baha-a
             </a>
             </span>
