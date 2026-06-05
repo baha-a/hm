@@ -7,7 +7,7 @@ export default function Location() {
       <div className="mt-16 lg:mt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <a href="https://maps.app.goo.gl/h76gkPCjhokxwnrp7" target="_blank" className="relative">
-            <img src="/images/address-dark.png" alt="address map" className="border border-black/20 cursor-pointer rounded-lg object-cover drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 hidden dark:block" />
+            {/* <img src="/images/address-dark.png" alt="address map" className="border border-black/20 cursor-pointer rounded-lg object-cover drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 hidden dark:block" /> */}
             <img src="/images/address.png" alt="address map" className="border border-black/20 cursor-pointer rounded-lg object-cover drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 block dark:hidden" />
           </a>
           <div>
