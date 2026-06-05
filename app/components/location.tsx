@@ -25,7 +25,7 @@ export default function Location() {
                   target="_blank"
                   className="mt-1 pl-8 text-gray-700 dark:text-gray-400 hover:dark:text-white hover:dark:dark:text-black"
                 >
-                  Bergisch Gladbacherstrasse. 595, 51067 Mülheim
+                  Bergisch Gladbacher Straße. 595, 51067 Mülheim
                 </a>
               </div>
               <div className="border-t border-dashed border-gray-200/25 py-4">
