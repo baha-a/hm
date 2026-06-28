@@ -29,43 +29,55 @@ const Carousel = ({ images }: {
   };
 
   return (
-    <div className="relative">
-      <div className="relative overflow-hidden carousel-image rounded-lg m-4 mt-0 shadow-lg">
+    <div className="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-gray-100 shadow-soft">
+      <div className="relative carousel-image">
         {images.map((image, index) => (
-          <div key={image} className={`ease-in-out duration-700`}  hidden={index !== currentIndex}>
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className=' block w-full carousel-image'
-            />
-          </div>
-        ))}
-      </div>
-
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToImage(index)}
-            className={`w-6 h-1 rounded-full ${index === currentIndex ? 'bg-gray-100' : 'bg-gray-400'}`}
+          <img
+            key={image}
+            src={image}
+            alt={`Dellbrück Haushaltsgeräte – Bild ${index + 1}`}
+            className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ease-in-out ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
           />
         ))}
       </div>
 
-      <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={prevImage}>
-        <svg className="w-7 h-7 text-white dark:text-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M5 1 1 5l4 4" />
-        </svg>
-        <span className="sr-only">Previous</span>
-      </button>
+      {/* Indicators */}
+      <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToImage(index)}
+            aria-label={`Zu Bild ${index + 1}`}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              index === currentIndex ? 'w-7 bg-gray-900' : 'w-2.5 bg-gray-900/30 hover:bg-gray-900/50'
+            }`}
+          />
+        ))}
+      </div>
 
-      <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={nextImage}>
-        <svg className="w-7 h-7 text-white dark:text-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 9 4-4-4-4" />
+      {/* Arrows */}
+      <button
+        type="button"
+        onClick={prevImage}
+        aria-label="Vorheriges Bild"
+        className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-800 opacity-0 shadow-soft backdrop-blur transition hover:bg-white group-hover:opacity-100 focus-visible:opacity-100"
+      >
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7" />
         </svg>
-        <span className="sr-only">Next</span>
       </button>
-
+      <button
+        type="button"
+        onClick={nextImage}
+        aria-label="Nächstes Bild"
+        className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-800 opacity-0 shadow-soft backdrop-blur transition hover:bg-white group-hover:opacity-100 focus-visible:opacity-100"
+      >
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
+        </svg>
+      </button>
     </div>
   );
 };

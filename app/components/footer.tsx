@@ -1,38 +1,49 @@
+const footerLinks = [
+  { label: "Service", href: "#services" },
+  { label: "Preise", href: "#preise" },
+  { label: "Team", href: "#team" },
+  { label: "Kontakt", href: "#kontakt" },
+];
+
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-white shadow dark:bg-gray-900">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="#" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -11 14.75 13">
-                <path d="M 0 -1 L 3 -1 L 3 2 L 0 2 L 0 -1 M 0 -2 L 0 -5 L 7 -5 L 7 2 L 4 2 L 4 -2 L 0 -2 M 0 -6 L 3 -6 L 3 -8 L 8 -8 L 8 -11 L 2 -11 L 0 -11 L 0 -6 M 8 -11 C 17 -11 17 2 8 2 L 8 -1 C 13 -1 13 -8 8 -8 Z" fill="#FFCC00" />
+    <footer className="border-t border-gray-200 bg-white">
+      <div className="container-page py-12">
+        <div className="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
+          <a href="#top" className="flex items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gray-900">
+              <svg className="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 -11 14.75 13">
+                <path d="M 0 -1 L 3 -1 L 3 2 L 0 2 L 0 -1 M 0 -2 L 0 -5 L 7 -5 L 7 2 L 4 2 L 4 -2 L 0 -2 M 0 -6 L 3 -6 L 3 -8 L 8 -8 L 8 -11 L 2 -11 L 0 -11 L 0 -6 M 8 -11 C 17 -11 17 2 8 2 L 8 -1 C 13 -1 13 -8 8 -8 Z" fill="#FBBF24" />
               </svg>
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dellbrück Haushaltsgeräte</span>
-            </a>
-            <ul className="flex flex-wrap md:items-center flex-col md:flex-row gap-1 lg:gap-2 justify-start my-6 text-sm font-medium text-gray-500 dark:text-gray-400">
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Über uns</a>
+            </span>
+            <span className="text-base font-bold tracking-tight text-gray-900">
+              Dellbrück <span className="font-medium text-gray-500">Haushaltsgeräte</span>
+            </span>
+          </a>
+
+          <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-gray-500">
+            {footerLinks.map((l) => (
+              <li key={l.href}>
+                <a href={l.href} className="transition hover:text-gray-900">{l.label}</a>
               </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Datenschutzerklärung</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">Impressum</a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">Kontakt</a>
-              </li>
-            </ul>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-800 lg:mt-12 lg:mb-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center text-italic">
-            2026 by <a href="https://github.com/baha-a" target="_blank" className="hover:underline">
+            ))}
+            <li><a href="#" className="transition hover:text-gray-900">Datenschutz</a></li>
+            <li><a href="#" className="transition hover:text-gray-900">Impressum</a></li>
+          </ul>
+        </div>
+
+        <hr className="my-8 border-gray-200" />
+
+        <div className="flex flex-col items-center justify-between gap-3 text-sm text-gray-500 sm:flex-row">
+          <span>© 2026 Dellbrück Haushaltsgeräte · Bergisch Gladbacher Str. 595, Köln</span>
+          <span>
+            Erstellt von{" "}
+            <a href="https://github.com/baha-a" target="_blank" className="font-medium text-gray-700 transition hover:text-gray-900">
               baha-a
             </a>
-            </span>
+          </span>
         </div>
-      </footer>
-    </>
-  )
+      </div>
+    </footer>
+  );
 }

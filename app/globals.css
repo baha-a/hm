@@ -3,42 +3,65 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: 250 250 249; /* warm near-white (stone-50) */
+  --foreground: 17 24 39; /* gray-900 */
+  --accent: 251 191 36; /* brand-400 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to top,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground));
+  background-color: rgb(var(--background));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: rgb(var(--accent));
+  color: rgb(17 24 39);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Consistent section container */
+  .container-page {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+}
+
+@layer components {
+  /* Small uppercase label that sits above section headings */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+  }
+
+  /* Primary call-to-action button (amber) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-400 px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-soft transition hover:bg-brand-500 hover:shadow-lift focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+  }
+
+  /* Secondary / outline button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:border-gray-400 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2;
+  }
+
+  /* Reusable surface card */
+  .card {
+    @apply rounded-2xl border border-gray-200/80 bg-white shadow-soft transition duration-200;
+  }
 }
 
 .carousel-image {
-  height: 40rem;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .carousel-image {
-    height: 20rem;
-  }
+  height: 40vh;
+  object-fit: contain;
 }

@@ -1,42 +1,28 @@
 import Navbar from "./components/navbar";
-import Carousel from "./components/carousel";
-import Services from "./components/services";
+import Hero from "./components/hero";
 import Brands from "./components/brands";
-import Footer from "./components/footer";
-import Team from "./components/team";
+import Services from "./components/services";
 import Prices from "./components/prices";
-import Location from "./components/location";
-import Divider from "./components/divider";
 import Why from "./components/why";
 import Testimonials from "./components/testimonials";
-import EBay from "./components/ebay";
+import Team from "./components/team";
+import Location from "./components/location";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Carousel images={[
-        '/images/carousel/1.jpeg',
-        '/images/carousel/2.jpeg',
-        '/images/carousel/3.jpeg',
-        '/images/carousel/4.jpeg',
-        '/images/carousel/5.jpeg',
-        '/images/carousel/6.jpeg',
-        '/images/carousel/7.jpeg',
-      ]} />
-      <Divider />
-      <Services />
-      <Divider />
-      <Prices />
-      <Why />
-      {/* <EBay /> */}
-      <Divider />
-      <Testimonials />
-      <Brands />
-      <Team />
-      <Divider line />
-      <Location />
-      <Divider />
+      <main>
+        <Hero />
+        <Brands />
+        <Services />
+        <Prices />
+        <Why />
+        <Testimonials />
+        <Team />
+        <Location />
+      </main>
       <Footer />
     </>
   );
