@@ -20,10 +20,10 @@ export default function Prices() {
               <p className="mt-1 text-sm text-gray-500">Zuverlässige Anlieferung in Köln</p>
             </div>
             <div className="px-6 py-2">
-              <PriceItem title="Anlieferung in Köln" subtitle="bis zur 3. Etage (erstes Gerät)" cost={39} />
+              <PriceItem title="Anlieferung in Köln" subtitle="bis zur 3. Etage (erstes Gerät)" cost={45} />
               <PriceItem title="Jedes weitere Gerät" cost={19} prefix="+" />
               <PriceItem title="Ab der 4. Etage" subtitle="ohne Aufzug" cost={10} prefix="zzgl." />
-              <PriceItem title="Herd-Anlieferung inkl. Anschluss" subtitle="in Köln" cost={59} />
+              <PriceItem title="Herd-Anlieferung inkl. Anschluss" subtitle="in Köln" cost={79} />
               <PriceItem title="Anlieferung" subtitle="außerhalb von Köln" cost={49} prefix="ab" />
               <PriceItem title="Altgeräteentsorgung" cost={10} />
             </div>
