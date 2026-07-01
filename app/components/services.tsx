@@ -28,7 +28,7 @@ export default function Services() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z" />
           </svg>
         </Service>
-        <Service title="Beratung" content="Als Ihr Fachhändler in Köln behalten wir die neuesten Entwicklungen im Blick und teilen unser Wissen gerne mit Ihnen.">
+        <Service title="Beratung" content="Als Ihr Fachhändler mit Standort in Köln geben wir unser Wissen gerne an Sie weiter. Für Hausbesuche berechnen wir eine Pauschale von 60 € für die Anfahrtskosten.">
           <svg className="h-7 w-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z" />
           </svg>
