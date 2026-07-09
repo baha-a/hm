@@ -1,11 +1,12 @@
 import Carousel from "./carousel";
 
 const carouselImages = [
-  "/images/carousel/0.jpg",
-  "/images/carousel/1.jpg",
-  "/images/carousel/3.jpg",
-  "/images/carousel/4.jpg",
-  "/images/carousel/5.jpg",
+  "/images/carousel/0.webp",
+  "/images/carousel/1.webp",
+  "/images/carousel/2.webp",
+  "/images/carousel/3.webp",
+  "/images/carousel/4.webp",
+  "/images/carousel/5.webp",
 ];
 
 export default function Hero() {

@@ -1,8 +1,8 @@
 const footerLinks = [
-  { label: "Service", href: "#services" },
-  { label: "Preise", href: "#preise" },
-  { label: "Team", href: "#team" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Service", href: "/#services" },
+  { label: "Preise", href: "/#preise" },
+  { label: "Team", href: "/#team" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="border-t border-gray-200 bg-white">
       <div className="container-page py-12">
         <div className="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
-          <a href="#top" className="flex items-center gap-2.5">
+          <a href="/#top" className="flex items-center gap-2.5">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gray-900">
               <svg className="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 -11 14.75 13">
                 <path d="M 0 -1 L 3 -1 L 3 2 L 0 2 L 0 -1 M 0 -2 L 0 -5 L 7 -5 L 7 2 L 4 2 L 4 -2 L 0 -2 M 0 -6 L 3 -6 L 3 -8 L 8 -8 L 8 -11 L 2 -11 L 0 -11 L 0 -6 M 8 -11 C 17 -11 17 2 8 2 L 8 -1 C 13 -1 13 -8 8 -8 Z" fill="#FBBF24" />
@@ -27,8 +27,8 @@ export default function Footer() {
                 <a href={l.href} className="transition hover:text-gray-900">{l.label}</a>
               </li>
             ))}
-            <li><a href="#" className="transition hover:text-gray-900">Datenschutz</a></li>
-            <li><a href="#" className="transition hover:text-gray-900">Impressum</a></li>
+            <li><a href="/datenschutz" className="transition hover:text-gray-900">Datenschutz</a></li>
+            <li><a href="/impressum" className="transition hover:text-gray-900">Impressum</a></li>
           </ul>
         </div>
 
