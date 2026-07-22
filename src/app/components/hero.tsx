@@ -15,10 +15,10 @@ export default function Hero() {
       {/* Soft amber glow backdrop */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-[420px] bg-gradient-to-b from-brand-100/70 to-transparent"
+        className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-105 bg-linear-to-b from-brand-100/70 to-transparent"
       />
 
-      <div className="container-page pt-14 pb-10 lg:pt-20">
+      <div className="pb-10">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-500" />

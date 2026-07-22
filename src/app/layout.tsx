@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -12,13 +14,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="de" className="scroll-smooth">
       <body className={`${inter.className} bg-stone-50 text-gray-900 antialiased`}>
-        {children}
+        <Navbar />
+        <main className="container-page py-12">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

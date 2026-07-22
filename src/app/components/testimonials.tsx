@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useRef } from 'react';
 
 const reviews = [
@@ -20,7 +20,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="container-page py-20 sm:py-24">
+    <section id="testimonials">
       <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-2xl text-center sm:text-left">
           <p className="eyebrow">Referenzen</p>
@@ -43,7 +43,7 @@ export default function Testimonials() {
 
       <div
         ref={scroller}
-        className="mt-10 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="mt-10 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden"
       >
         {reviews.map((r) => (
           <Quote key={r.author} {...r} />
@@ -67,7 +67,7 @@ function Quote({
   date: string;
 }) {
   return (
-    <figure className="card flex w-[320px] flex-none snap-center flex-col p-6 sm:w-[360px]">
+    <figure className="card flex w-[320px] flex-none snap-center flex-col p-6 sm:w-90">
       <FiveStars />
       <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-gray-700">
         “{content}”

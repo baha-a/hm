@@ -1,5 +1,40 @@
 @import "tailwindcss";
-@config "../tailwind.config.ts";
+
+@source "./pages/**/*.{js,ts,jsx,tsx,mdx}";
+@source "./components/**/*.{js,ts,jsx,tsx,mdx}";
+@source "./app/**/*.{js,ts,jsx,tsx,mdx}";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-50: "#fffbeb";
+  --color-brand-100: "#fef3c7";
+  --color-brand-200: "#fde68a";
+  --color-brand-300: "#fcd34d";
+  --color-brand-400: "#fbbf24";
+  --color-brand-500: "#f59e0b";
+  --color-brand-600: "#d97706";
+  --color-brand-700: "#b45309";
+
+  --shadow-soft: 0 1px 2px rgba(16,24,40,0.04), 0 4px 16px rgba(16,24,40,0.06);
+  --shadow-lift: 0 12px 32px rgba(16,24,40,0.12);
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+
+  --animation-marquee: marquee 60s linear infinite;
+  --animation-marquee2: marquee2 60s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
 
 :root {
   --background: 250 250 249; /* warm near-white (stone-50) */

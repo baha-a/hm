@@ -38,7 +38,7 @@ const Carousel = ({ images }: {
             alt={`Dellbrück Haushaltsgeräte – Bild ${index + 1}`}
             className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ease-in-out ${
               index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
+              }`}
           />
         ))}
       </div>

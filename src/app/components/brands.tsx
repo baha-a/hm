@@ -11,15 +11,15 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="py-8">
-      <p className="container-page text-center text-sm font-medium uppercase tracking-[0.18em] text-gray-400">
+    <section>
+      <p className="text-center text-sm font-medium uppercase tracking-[0.18em] text-gray-400">
         Marken, denen Sie vertrauen
       </p>
 
       <div className="relative mt-8 flex overflow-x-hidden">
         {/* edge fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-stone-50 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-stone-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-linear-to-r from-stone-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-linear-to-l from-stone-50 to-transparent" />
 
         <div className="flex animate-marquee items-center gap-16 whitespace-nowrap px-8">
           {brands.map((x) => (
