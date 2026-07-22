@@ -43,7 +43,19 @@ export default function Location() {
             </InfoRow>
 
             <InfoRow title="Telefon" icon="phone">
-              <a href="tel:+4917684656125" className="text-gray-600 transition hover:text-gray-900">+49 176 84656125</a>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://wa.me/4917684656125"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex group rounded-lg bg-gray-100 gap-1 p-2 text-gray-600 transition hover:text-gray-900 hover:bg-gray-200"
+                >
+                  <svg className="h-5 w-5 group-hover:fill-green-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.32 4.94L2 22l5.2-1.36A9.94 9.94 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10Zm5.87 14.16c-.25.7-1.45 1.34-2 1.42-.51.08-1.16.11-1.87-.12-.43-.14-.98-.32-1.68-.63-2.96-1.28-4.89-4.26-5.04-4.46-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.05.22-.24.65-.76.83-.97.18-.21.35-.17.6-.1.24.08 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.18 1.34Z" />
+                  </svg>
+                  +49 176 84656125
+                </a>
+              </div>
             </InfoRow>
 
             <InfoRow title="E-Mail" icon="mail">
