@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="pb-10">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand-500" />
+            <span className="inline-block h-1.5 w-1.5 rounded-full" />
             Ihr Fachhändler in Köln
           </span>
 

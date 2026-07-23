@@ -50,7 +50,7 @@ export default function Navbar() {
             href="https://wa.me/4917684656125"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary group w-full"
+            className="bg-amber-300 btn-primary group w-full"
 
           >
             <svg className="h-6 w-6 group-hover:fill-green-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export default function Navbar() {
                 href="https://wa.me/4917684656125"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary group w-full"
+                className="bg-amber-300 btn-primary group w-full"
 
               >
                 <svg className="h-8 w-8 group-hover:fill-green-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
